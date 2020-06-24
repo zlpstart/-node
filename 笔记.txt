@@ -32,3 +32,8 @@ hello world
 
 浏览器中的JavaScript是没有文件操作能力的
 但是Node中的Javascript具有文件操作的能力
+
+1.解析执行 JavaScript
+2.读写文件
+3.http
+
