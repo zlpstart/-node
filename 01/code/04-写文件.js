@@ -12,7 +12,7 @@ var fs = require('fs')
 //          文件写入失败
 //          error就是错误对象
 
-fs.writeFile('./data/zlp1.md','大家好，给大家介绍一下，这是我老婆汤正玥',(error) => {
+fs.writeFile('./data/zlp1.md','1111',(error) => {
     if(error){
         console.log("写入文件失败了")
     }else {

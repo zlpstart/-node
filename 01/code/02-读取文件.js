@@ -13,7 +13,7 @@ var fs = require('fs')
 //          如果读取失败 error 就是错误对象
 //          如果读取成功 error 就是null
 //      data
-//          如果读取失败 undefined 没有数据 
+//          如果读取失败 undefined 没有数据
 //          如果读取成功 data  就是读取到的数据
 //        
 //          成功
