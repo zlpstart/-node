@@ -97,3 +97,24 @@ Content-Type
      一般只为字符数据才指定编码
 
     除了 Content-Type 可以用来指定编码，也可以在 HTML 页面中 通过 meta元素来生命当前编码格式，浏览器也能识别出来
+
+
+art-template
+art-template 不仅可以在浏览器使用，也可以在Node中使用
+
+安装：
+ cnpm install art-template
+ 该命令在哪执行就会把包安装下载到哪里。默认会下载到 node_modules目录中
+ 注意：在浏览器中需要引入 lib/template-web.js 文件
+ 强调：模板引擎不关注你的字符串内容，只关心自己能认识的模板标记语法，例如{{}}
+ {{}}又称之为 mustache 语法，八字胡阿
+
+ 在Node中使用 art-template 模板引擎
+ 模板引擎最早就是诞生于服务器领域，后来才发展到了前端。
+
+ 1.安装：cnpm install art-template
+ 2.在需要使用的模块文件中加载 art-template
+    只需要使用 require 方法加载就可以了: require('art-template')
+    参数中的 art-template 就是你下载的包的名字
+    也就是说你 install 的名字是什么，则你require() 中的就是什么
+ 3.查看文档，使用模板引擎的API

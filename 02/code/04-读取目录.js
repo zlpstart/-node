@@ -1,8 +1,8 @@
 let fs = require('fs')
 
-fs.readdir('E:/node Assins',(err,data)=>{
+fs.readdir('E:/黑马node/node/node assets',(err,data)=>{
     if(err){
-        console.log("目录不可用")
+        return console.log("目录不可用")
     }
     console.log(data)
 })
