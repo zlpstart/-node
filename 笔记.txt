@@ -74,4 +74,26 @@ IP地址用来定位计算机
     例http服务的80
 我们在开发过程中使用一些简单好记的就可以了，例如3000，5000 等没什么含义
 可以同时开启多个服务，但一定要确保不同服务占用的端口号不一致才可以
-说白了，
+说白了，在一台计算机中，同一个端口号同一时间只能被一个程序占用
+
+Content-Type
+
+    在服务器默认发送的数据，其实是utf8编码的内容
+    但在浏览器不知道你是utf8编码的内容
+    浏览器在不知道服务器响应内容的编码的情况下按照当前操作系统的默认编码去解析
+    中文操作系统默认是 gbk
+    解决方法就是正确的告诉浏览器，我给你发送的内容是什么编码的
+    在http协议中，Content-Type 就是用来告诉对方我发送给你的数据内容是什么类型
+    res.setHeader('Content-Type','text/plain;charset=utf-8')
+    res.end('hello 世界')
+
+    对照表：https://tool.oschina.net/commons
+
+    1.结合 fs 发送文件中的数据
+    2.Content-Type
+     https://tool.oschina.net/commons
+     不同的资源对应不同的Content-Type 是不一样的
+     图片是不需要指定编码
+     一般只为字符数据才指定编码
+
+    除了 Content-Type 可以用来指定编码，也可以在 HTML 页面中 通过 meta元素来生命当前编码格式，浏览器也能识别出来
