@@ -1,0 +1,1 @@
+let template = require('art-template')
